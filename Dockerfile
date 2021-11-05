@@ -1,0 +1,1 @@
+FROM rocket.chat:latest
