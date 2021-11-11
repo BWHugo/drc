@@ -16,13 +16,8 @@ services:
       - MONGO_URL=mongodb://mongo:27017/rocketchat
     links:
       - mongo:mongo
-      - smtp:smtp
 
 
-  smtp:
-    image: namshi/smtp
-    environment:
-      - RELAY_DOMAINS=:telecard.com.ua
 
   nginx:
     image: nginx:1.10.1-alpine
