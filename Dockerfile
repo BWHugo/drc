@@ -1,5 +1,5 @@
 FROM mongo:latest
-RUN eval "printjson(rs.initiate())"
+RUN mongo --eval "printjson(rs.initiate())
 VOLUME /dbs
 
 FROM rocket.chat:latest
