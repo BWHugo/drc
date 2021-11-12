@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cirleci/golang:1.15
+      - image: circleci/golang:1.15
         auth:
           username: bwhugo
           password: $DOCKHUB_PASSWORD
